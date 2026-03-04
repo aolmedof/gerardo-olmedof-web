@@ -15,7 +15,7 @@ const certGroups = [
       {
         name: 'AWS Certified Solutions Architect – Associate',
         badge: 'img/badges/aws-solutions-architect-associate.png',
-        type: 'expired',
+        type: 'official',
         certId: '916DN8BBMBQQ1W3Z',
         url: 'https://www.credly.com/users/gerardo-olmedo',
         period: 'Sep 2021 – Sep 2024',
@@ -23,7 +23,7 @@ const certGroups = [
       {
         name: 'AWS Certified Developer – Associate',
         badge: 'img/badges/aws-developer-associate.png',
-        type: 'expired',
+        type: 'official',
         certId: 'BKVCK80BNFE41YSD',
         url: 'https://www.credly.com/users/gerardo-olmedo',
         period: 'Jul 2022 – Jul 2025',
@@ -31,7 +31,7 @@ const certGroups = [
       {
         name: 'AWS Certified Cloud Practitioner',
         badge: 'img/badges/aws-cloud-practitioner.png',
-        type: 'expired',
+        type: 'official',
         certId: 'LJ4KB1YBJEE11DCQ',
         url: 'https://www.credly.com/users/gerardo-olmedo',
         period: 'May 2021 – Sep 2024',
@@ -254,12 +254,7 @@ function renderCertifications(t) {
 
     const cards = group.certs.map((cert, ci) => {
       const tl = typeLabel[cert.type];
-      const verifyBtn = cert.url
-        ? `<a href="${cert.url}" target="_blank" rel="noopener noreferrer"
-              class="cert-verify" style="border-color:${group.color}; color:${group.color};">
-              ${t.certifications.verify} <i class="fa-solid fa-arrow-up-right-from-square"></i>
-           </a>`
-        : '';
+      const verifyBtn = '';
       const periodHtml = cert.period
         ? `<p class="cert-period"><i class="fa-regular fa-calendar"></i> ${cert.period}</p>`
         : '';
