@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gerardo Olmedo Flores - AWS Cloud Engineer, Solutions Architect &amp; Scrum Master" />
+  <meta name="author" content="Gerardo Olmedo Flores" />
+  <meta name="theme-color" content="#0a192f" />
+  <link rel="canonical" href="https://gerardo.olmedof.com" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gerardo Olmedo Flores - AWS Cloud Engineer" />
+  <meta property="og:description" content="AWS Cloud Engineer, Solutions Architect &amp; Scrum Master" />
+  <meta property="og:url" content="https://gerardo.olmedof.com" />
+  <meta property="og:site_name" content="Gerardo Olmedo Flores" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gerardo Olmedo Flores - AWS Cloud Engineer" />
+  <meta name="twitter:description" content="AWS Cloud Engineer, Solutions Architect &amp; Scrum Master" />
+
+  <title>Gerardo Olmedo Flores | AWS Cloud Engineer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS 2.3.4 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYc8/AXwEkpnhJ3OMdYeqHxJB5D0e4X6lVkGa6G7eFoFLxMFBM3xbHcpfa5T0TJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Gerardo<span> Olmedo</span></a>
+
+      <ul id="nav-menu" role="list">
+        <li><a href="#about"          class="nav-link" data-i18n="nav.about">About</a></li>
+        <li><a href="#experience"     class="nav-link" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#certifications" class="nav-link" data-i18n="nav.certifications">Certifications</a></li>
+        <li><a href="#skills"         class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#education"      class="nav-link" data-i18n="nav.education">Education</a></li>
+        <li><a href="#contact"        class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="lang-toggle" aria-label="Toggle language">ES</button>
+        <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-gradient" aria-hidden="true"></div>
+
+    <div class="hero-inner hero-single">
+      <div class="hero-content">
+        <p class="hero-greeting" data-i18n="hero.greeting">Hi, I'm</p>
+
+        <h1 class="hero-name">
+          Gerardo <span class="accent">O. Flores</span>
+        </h1>
+
+        <div class="hero-typing-wrapper" aria-live="polite">
+          <span id="typing-text"></span>
+        </div>
+
+        <p class="hero-title" data-i18n="hero.title">
+          AWS Cloud Engineer
+        </p>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          Cloud Solution Architect | Scrum Master
+        </p>
+
+        <div class="hero-cta">
+          <a href="#experience" class="btn btn-primary">
+            <i class="fa-solid fa-briefcase"></i>
+            <span data-i18n="hero.cta_experience">View Experience</span>
+          </a>
+          <a href="#" id="cv-btn" class="btn btn-outline">
+            <i class="fa-solid fa-download"></i>
+            <span data-i18n="hero.cta_cv">Download CV</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       AI PROMPT BAR
+  ═══════════════════════════════════════════ -->
+  <section id="ai-prompt">
+    <div class="container">
+      <div class="ai-prompt-card" data-aos="fade-up">
+        <div class="ai-prompt-header">
+          <i class="fa-solid fa-robot"></i>
+          <span class="ai-prompt-title">Ask me anything about Gerardo</span>
+          <span class="ai-powered-badge">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Gerardo's ML/AI-model
+          </span>
+        </div>
+
+        <!-- Chat history bubbles -->
+        <div id="chat-history" class="chat-history" role="log" aria-live="polite"></div>
+
+        <!-- Quick suggestions -->
+        <div class="quick-suggestions" id="quick-suggestions">
+          <button class="quick-btn" data-key="years"  data-q="How many years of experience does Gerardo have?">Years of experience?</button>
+          <button class="quick-btn" data-key="certs"  data-q="What certifications does Gerardo have?">Certifications</button>
+          <button class="quick-btn" data-key="stack"  data-q="What is his tech stack?">Tech stack</button>
+          <button class="quick-btn" data-key="visa"   data-q="Where is Gerardo based?">Location &amp; remote</button>
+        </div>
+
+        <!-- Input -->
+        <div class="ai-input-wrapper">
+          <input type="text" id="ai-input" autocomplete="off" aria-label="Ask a question" />
+          <button id="ai-send" aria-label="Send">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+        <div class="ai-rate-info" id="ai-rate-info"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-text-wrapper" data-aos="fade-up">
+        <span class="section-tag">About</span>
+        <h2 data-i18n="about.title">About Me</h2>
+        <p class="about-subtitle" data-i18n="about.subtitle">
+          Passionate about building secure, scalable cloud systems
+        </p>
+        <p data-i18n="about.text">
+          Certified AWS Solutions Architect and Cloud Engineer with strong experience in designing
+          and building secure, scalable, and fault-tolerant distributed systems.
+        </p>
+        <div class="about-badges">
+          <div class="about-badge">
+            <i class="fa-solid fa-circle-check"></i>
+            <span data-i18n="about.availability">Open to remote opportunities globally</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       EXPERIENCE
+  ═══════════════════════════════════════════ -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title" data-i18n="experience.title">Experience</h2>
+        <p class="section-subtitle" data-i18n="experience.subtitle">
+          Building cloud-native infrastructure across industries
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div id="timeline-container"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CERTIFICATIONS
+  ═══════════════════════════════════════════ -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title" data-i18n="certifications.title">Certifications</h2>
+        <p class="section-subtitle" data-i18n="certifications.subtitle">
+          Industry-recognized credentials in cloud and Agile
+        </p>
+      </div>
+
+      <div id="certs-container"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════════ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technologies</span>
+        <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+        <p class="section-subtitle" data-i18n="skills.subtitle">
+          Technologies and tools I work with daily
+        </p>
+      </div>
+
+      <div class="skills-layout">
+        <div id="skills-dots"></div>
+        <div id="skills-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       EDUCATION
+  ═══════════════════════════════════════════ -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academia</span>
+        <h2 class="section-title" data-i18n="education.title">Education</h2>
+        <p class="section-subtitle" data-i18n="education.subtitle">
+          Academic and professional development background
+        </p>
+      </div>
+
+      <div id="education-grid"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">
+          Let's build something great together
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info" data-aos="fade-right">
+          <h3 class="contact-info-title">Let's connect</h3>
+          <p class="contact-info-desc">
+            Open to remote opportunities, cloud architecture engagements, and technical collaborations worldwide.
+          </p>
+
+          <a href="mailto:gerardo.olmedof@email.com" class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="contact-item-label" data-i18n="contact.email_label">Email</div>
+              <div class="contact-item-value">gerardo.olmedof@email.com</div>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/gerardo-olmedo" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="LinkedIn profile">
+            <div class="contact-item-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div>
+              <div class="contact-item-label">LinkedIn</div>
+              <div class="contact-item-value">linkedin.com/in/gerardo-olmedo</div>
+            </div>
+          </a>
+        </div>
+
+        <form id="contact-form" class="contact-form" data-aos="fade-left" novalidate>
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              data-i18n="contact.form_name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              data-i18n="contact.form_email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              data-i18n="contact.form_message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span data-i18n="contact.form_send">Send Message</span>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-social" aria-label="Social links">
+          <a href="https://www.linkedin.com/in/gerardo-olmedo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:gerardo.olmedof@email.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+        <p class="footer-copyright" data-i18n="footer.copyright">
+          &copy; 2025 Gerardo Olmedo Flores. All rights reserved.
+        </p>
+        <p class="footer-built" data-i18n="footer.built">
+          Built with cloud technologies and deployed on AWS
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS 2.3.4 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Translations -->
+  <script src="js/translations.js"></script>
+
+  <!-- Bot Knowledge Base -->
+  <script src="js/bot-knowledge.js"></script>
+
+  <!-- Bot Engine -->
+  <script src="js/bot-engine.js"></script>
+
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
