@@ -22,7 +22,7 @@ const certGroups = [
       },
       {
         name: 'AWS Certified Developer – Associate',
-        badge: 'img/badges/aws-developer-associate.svg',
+        badge: 'img/badges/aws-developer-associate.png',
         type: 'expired',
         certId: 'BKVCK80BNFE41YSD',
         url: 'https://www.credly.com/users/gerardo-olmedo',
