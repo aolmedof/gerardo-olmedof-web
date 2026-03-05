@@ -42,6 +42,7 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
 
   <!-- ══════════════════════════════════════════
        NAVBAR
@@ -72,7 +73,6 @@
        HERO
   ═══════════════════════════════════════════ -->
   <section id="hero">
-    <canvas id="hero-canvas" aria-hidden="true"></canvas>
     <div class="hero-gradient" aria-hidden="true"></div>
 
     <div class="hero-inner">
@@ -281,11 +281,11 @@
             Open to remote opportunities, cloud architecture engagements, and technical collaborations worldwide.
           </p>
 
-          <a href="mailto:gerardo.olmedof@email.com" class="contact-item">
+          <a href="mailto:g.olmedof@gmail.com" class="contact-item">
             <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
             <div>
               <div class="contact-item-label" data-i18n="contact.email_label">Email</div>
-              <div class="contact-item-value">gerardo.olmedof@email.com</div>
+              <div class="contact-item-value">g.olmedof@gmail.com</div>
             </div>
           </a>
 
@@ -345,7 +345,7 @@
           <a href="https://www.linkedin.com/in/gerardo-olmedo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
             <i class="fa-brands fa-linkedin-in"></i>
           </a>
-          <a href="mailto:gerardo.olmedof@email.com" aria-label="Email">
+          <a href="mailto:g.olmedof@gmail.com" aria-label="Email">
             <i class="fa-solid fa-envelope"></i>
           </a>
         </div>
@@ -361,6 +361,9 @@
 
   <!-- AOS 2.3.4 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Background animation -->
+  <script src="js/background.js"></script>
 
   <!-- Translations -->
   <script src="js/translations.js"></script>

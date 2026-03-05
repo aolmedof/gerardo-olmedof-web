@@ -26,7 +26,7 @@ const botKnowledge = {
       en: 'Gerardo is based in Mexico and is open to remote opportunities globally.',
       es: 'Gerardo está basado en México y está abierto a oportunidades remotas globalmente.',
     },
-    email: 'gerardo.olmedof@email.com',
+    email: 'g.olmedof@gmail.com',
     linkedin: 'https://www.linkedin.com/in/gerardo-olmedo',
   },
 
@@ -308,8 +308,8 @@ const botKnowledge = {
       es: '¡Hola! Soy el asistente del portfolio de Gerardo. Puedo responder preguntas sobre su experiencia como ingeniero cloud, expertise en AWS, certificaciones, habilidades y trayectoria. ¿Qué te gustaría saber?',
     },
     contact: {
-      en: 'You can reach Gerardo at gerardo.olmedof@email.com or connect on LinkedIn at linkedin.com/in/gerardo-olmedo.',
-      es: 'Puedes contactar a Gerardo en gerardo.olmedof@email.com o conectar en LinkedIn en linkedin.com/in/gerardo-olmedo.',
+      en: 'You can reach Gerardo at g.olmedof@gmail.com or connect on LinkedIn at linkedin.com/in/gerardo-olmedo.',
+      es: 'Puedes contactar a Gerardo en g.olmedof@gmail.com o conectar en LinkedIn en linkedin.com/in/gerardo-olmedo.',
     },
     salary: {
       en: "Gerardo's compensation expectations are not disclosed here. Please reach out directly to discuss.",
