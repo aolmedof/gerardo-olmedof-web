@@ -1,5 +1,5 @@
 /* ============================================================
-   main.js  –  Gerardo Olmedo Flores Personal Portfolio
+   main.js  –  Gerardo el Grande Personal Portfolio
    ============================================================ */
 
 /* ── State ── */

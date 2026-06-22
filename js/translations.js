@@ -10,7 +10,7 @@ const translations = {
     },
     hero: {
       greeting: "Hi, I'm",
-      name: 'Gerardo Olmedo Flores',
+      name: 'Gerardo el Grande',
       title: 'AWS Cloud Engineer',
       subtitle: 'Cloud Solution Architect | Scrum Master',
       cta_experience: 'View Experience',
@@ -200,7 +200,7 @@ const translations = {
       form_send: 'Send Message',
     },
     footer: {
-      copyright: '© 2025 Gerardo Olmedo Flores. All rights reserved.',
+      copyright: '© 2025 Gerardo el Grande. All rights reserved.',
       built: 'Built with cloud technologies and deployed on AWS',
     },
   },
@@ -215,7 +215,7 @@ const translations = {
     },
     hero: {
       greeting: 'Hola, soy',
-      name: 'Gerardo Olmedo Flores',
+      name: 'Gerardo el Grande',
       title: 'Ingeniero Cloud AWS',
       subtitle: 'Arquitecto de Soluciones Cloud | Scrum Master',
       cta_experience: 'Ver Experiencia',
@@ -405,7 +405,7 @@ const translations = {
       form_send: 'Enviar Mensaje',
     },
     footer: {
-      copyright: '© 2025 Gerardo Olmedo Flores. Todos los derechos reservados.',
+      copyright: '© 2025 Gerardo el Grande. Todos los derechos reservados.',
       built: 'Construido con tecnologías cloud y desplegado en AWS',
     },
   },

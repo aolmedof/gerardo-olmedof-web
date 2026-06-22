@@ -1,12 +1,12 @@
 /* ============================================================
-   bot-knowledge.js  –  Gerardo Olmedo Flores Knowledge Base
+   bot-knowledge.js  –  Gerardo el Grande Knowledge Base
    ============================================================ */
 
 const botKnowledge = {
 
   /* ── Profile ── */
   profile: {
-    name: 'Gerardo Olmedo Flores',
+    name: 'Gerardo el Grande',
     totalYearsExperience: 15,
     devopsYears: 6,
     currentRole: {
@@ -33,8 +33,8 @@ const botKnowledge = {
   /* ── Experience ── */
   experience: {
     summary: {
-      en: 'Gerardo O. Flores has 15+ years of experience in IT and business. He has 6+ years of hands-on cloud and AWS expertise, working as a Cloud Engineer at TCS since January 2022. His background covers enterprise data platforms, cloud architecture, DevOps, infrastructure as code, CI/CD, and Agile project management. Prior to tech he worked in HR, administration, and finance.',
-      es: 'Gerardo O. Flores tiene más de 15 años de experiencia en IT y negocios. Cuenta con más de 6 años de experiencia práctica en cloud y AWS, trabajando como Ingeniero Cloud en TCS desde enero 2022. Su trayectoria abarca plataformas de datos empresariales, arquitectura cloud, DevOps, infraestructura como código, CI/CD y gestión de proyectos Agile.',
+      en: 'Gerardo el Grande has 15+ years of experience in IT and business. He has 6+ years of hands-on cloud and AWS expertise, working as a Cloud Engineer at TCS since January 2022. His background covers enterprise data platforms, cloud architecture, DevOps, infrastructure as code, CI/CD, and Agile project management. Prior to tech he worked in HR, administration, and finance.',
+      es: 'Gerardo el Grande tiene más de 15 años de experiencia en IT y negocios. Cuenta con más de 6 años de experiencia práctica en cloud y AWS, trabajando como Ingeniero Cloud en TCS desde enero 2022. Su trayectoria abarca plataformas de datos empresariales, arquitectura cloud, DevOps, infraestructura como código, CI/CD y gestión de proyectos Agile.',
     },
 
     byTechnology: {
